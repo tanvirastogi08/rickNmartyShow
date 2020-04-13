@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>R&MShow</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="filters">
+                <h2 class="filter__title">Filters</h2>
+                
+                <div class="filter__species">
+                    <h3>Species</h3>
+                    <ul class="species_list"></ul>
+                </div>
+                
+                <div class="filter__gender">
+                    <h3>Gender</h3>
+                    <ul class="gender_list"></ul>
+                </div>
+                
+                <div class="filter__origin">
+                    <h3>Origin</h3>
+                    <ul class="origin_list"></ul>
+                </div>
+            </div>
+            
+            <div class="search-and-shows">
+                <h2>Selected Filters</h2>
+                <p class="filter-value"></p> 
+                <h3 class="search-heading">Search By Name</h3>
+                <div class="search-sort">
+                    <form class="search">
+                        <input type="text" class="search__field" placeholder="Search.." name="search">
+                        <button class="btn search__btn">Search</button>
+                    </form>
+                    <div class="sort">
+                        <select id="shows">
+                            <option value="" selected>Sort by ID</option>
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Decending</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="results">
+                    <ul class="results__list">
+                        <!-- fetching from searchView.js -->
+                    </ul>
+                    <div class="results__pages">
+                        <!-- pagination buttons -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
